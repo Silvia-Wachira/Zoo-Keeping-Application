@@ -1,0 +1,39 @@
+{
+    "animalData": [
+    {
+        "id": 1,
+        "name": "Pangolia",
+        "imageUrl": "",
+        "description": ""
+        "donations": 0
+    },
+    {
+        "id": 1,
+        "name": "Pangolia",
+        "imageUrl": "",
+        "description": ""
+        "donations": 0
+    },
+     {
+        "id": 1,
+        "name": "Pangolia",
+        "imageUrl": "",
+        "description": ""
+        "donations": 0
+    },
+     {
+        "id": 1,
+        "name": "Pangolia",
+        "imageUrl": "",
+        "description": ""
+        "donations": 0
+    },
+     {
+        "id": 1,
+        "name": "Pangolia",
+        "imageUrl": "",
+        "description": ""
+        "donations": 0
+    },
+]
+}

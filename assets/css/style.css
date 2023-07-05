@@ -1,13 +1,38 @@
 .head {
     color: white;
-    background-color: rgb(10, 218, 10);
+    background-color: #0ada0a;
     height: 80px;
 }
+/* .container {
+    padding: 4px 16px;
+    justify-content: center;
+} */
 
-.btn {
-    color: white;
-    background-color: rgb(10, 218, 10);
-    border: none;
-    height: 50px;
-    width: 150px;
+ .form {
+     /* margin: 2px 16px;  */
+     
+    margin-left:40px;
+} 
+.card {
+    background: rgb(255, 254, 254);
+    width: 270px;
+    height: 200px;
+    border: 2px;
+    /* margin: 200px; */
+    margin-left: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.4s;
+
+
 }
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .btn {
+    color: white;
+    background-color: #0ada0a;
+    border: none;
+    height: 30px;
+    margin-left: 50px;
+  }

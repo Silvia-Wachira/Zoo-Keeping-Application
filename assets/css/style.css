@@ -3,3 +3,11 @@
     background-color: rgb(10, 218, 10);
     height: 80px;
 }
+
+.btn {
+    color: white;
+    background-color: rgb(10, 218, 10);
+    border: none;
+    height: 50px;
+    width: 150px;
+}

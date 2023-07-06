@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/src/data.js"></script>
     <link rel="stylesheet" href="/main.css">
-    <title>Zoo Keeping</title>
+    <title>Zkpr</title>
 </head>
 <body>
-    <h1 class="head">Welcome To Zoo Keeping</h1>
+    <header id="menu">
+        <h1 >Welcome To Zoo Keeping</h1>
+    </header>
     <div class="container">
-        <div class="card">
-            <div class="card-image car-1"></div>
-            <form action="" class="form_details">
-                <label for="name">Name: </label> <br>
+        <div class="card-1">
+            <!-- <div class="card-image car-1"></div> -->
+            <form id="animal-form">
+                <label for="name">Name</label><br>
                 <input type="text" id="name" name="name"><br>
-                <label for="image">Image_Url: </label><br>
-                <input type="img" id="img" name="img"><br>
-                <label for="description">Description:</label><br>
-                <input type="text" id="desc" name="description">
+                <label for="name">Image URL</label><br>
+                <input type="text" id="img_url" name="image_url"><br>
+                <label for="description">Description</label><br>
+                <textarea id="description" name="description"></textarea><br>
+                <button type="submit" class="btn">Adopt Animal </button>
 
-            </form><br>
-            <button class="btn">Adopt Animal </button>
-    </div>
+            </form>
+            
+            <ul id="animal-list" class="cards">
+                <!-- Animals here -->
+            </ul>
+
+             </div>
       </div>
     <script src="/src/script.js"></script>
 </body>

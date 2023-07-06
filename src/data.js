@@ -1,4 +1,4 @@
-{
+
     const animalData = [
       {
         "name": "Red Panda",
@@ -31,5 +31,5 @@
         "donations": 0
       }
     ]
-  }
-  console.log('bottom of data')
+  
+console.log('bottom of the data')

@@ -10,12 +10,15 @@
     margin-left: 200px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
     transition: 0.6s;
-    /* background-color: hsl(120, 67%, 42%); */
 }
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+
+  /* .container {
+    margin-left: 50px;
+  } */
 
 .btn {
     color: white;

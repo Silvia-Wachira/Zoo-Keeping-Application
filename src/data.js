@@ -2,8 +2,8 @@
     const animalData = [
       {
         "name": "Red Panda",
-        "imageUrl": "",
-        "description": "https://images.pexels.com/photos/145902/pexels-photo-145902.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "imageUrl": "https://images.pexels.com/photos/145902/pexels-photo-145902.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "description": "The red panda, also known as the lesser panda, is a small mammal native to the eastern Himalayas and southwestern China.",
         "donations": 0
       },
       {

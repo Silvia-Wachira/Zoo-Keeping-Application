@@ -7,7 +7,9 @@
     background: rgb(254, 252, 252);
     width: 270px;
     height: 200px;
-    margin-left: 200px;
+    margin-left: 550px;
+    margin-top: 50px;
+    /* margin-bottom: 100px; */
     padding-left: 60px;
     padding-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
@@ -15,9 +17,26 @@
 
 }
 
-.card:hover {
+.card-1:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+
+.card {
+    background: rgb(254, 252, 252);
+    width: 270px;
+    margin-left: 500px;
+    padding-left: 60px;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.6s;
+
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.img {
+  width: 200px;
+}
 
   /* .container {
     margin-left: 50px;

@@ -4,18 +4,22 @@ function renderOneAnimal(animal){
   let card = document.createElement('li')
   card.className = 'card'
   card.innerHTML = `
-  <img src="${animal.Url}">
+  <img class="img" src="${animal.imageUrl}">
   <div class="content">
     <h4>${animal.name}</h4>
     <p>
-    $span class= "donation-count"> ${animal.donation} </span> Donated
+    $<span class= "donation-count"> ${animal.donations} </span> Donated
     </p>
     <p>${animal.description} </p>
   </div>
+  <div>
+    <button class="btn"> Donate $10 </button>
+    <button class="btn"> Donate $10 </button>
+
+  </div>
   `
-    console.log(card)
   //Add animal card to DOM
-//   document.querySelector('animal-list').appendChild(card)
+  document.querySelector('#animal-list').appendChild(card)
 }
 
 //Initial render

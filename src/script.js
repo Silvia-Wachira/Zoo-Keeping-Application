@@ -22,9 +22,18 @@ function renderOneAnimal(animal){
   document.querySelector('#animal-list').appendChild(card)
 }
 
+//Fetch Request
+//Get Data and Render our Animals to the DOM
+function getAllAnimals() {
+  fetch('http://localhost:3000/animalData')
+  .then(res => res.json())
+  .then(data => console.log(data))
+}
+
 //Initial render
 //Get data and render animals to the DOM
  function initialize() {
-    animalData.forEach(animal => renderOneAnimal(animal))
+    // animalData.forEach(animal => renderOneAnimal(animal))
+    getAllAnimals()
  }
  initialize()

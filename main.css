@@ -48,3 +48,16 @@
     border: none;
     height: 30px;
 }
+
+#donate {
+  color: white;
+  background-color: hsl(120, 67%, 42%);
+  border: none;
+  height: 30px;
+}
+#set_free {
+  color: white;
+  background-color: hsl(120, 67%, 42%);
+  border: none;
+  height: 30px;
+}

@@ -1,3 +1,21 @@
+
+//Event Listeners
+document.querySelector('#animal-form').addEventListener('submit',
+handleSubmit)
+
+//Event handlers
+function handleSubmit(e) {
+  e.preventDefault()
+  let animalObj = {
+    name:e.target.name.value,
+    imageUrl:e.target.image_url.value,
+    description:e.target.description.value,
+    donations: 0
+  }
+  renderOneAnimal(animalObj)
+  adoptAnimal(animalObj)
+}
+
 //DOM Render Function
 function renderOneAnimal(animal){
   //Build Animal  
@@ -12,12 +30,14 @@ function renderOneAnimal(animal){
     </p>
     <p>${animal.description} </p>
   </div>
-  <div>
-    <button class="btn"> Donate $10 </button>
-    <button class="btn"> Donate $10 </button>
+  <div class="buttons">
+    <button id="donate"> Donate $10 </button>
+    <button id="set_free"> Set Free </button>
 
   </div>
   `
+
+  card.querySelector('#donate').addEventListener('click', () => console.log('click'))
   //Add animal card to DOM
   document.querySelector('#animal-list').appendChild(card)
 }
@@ -27,7 +47,22 @@ function renderOneAnimal(animal){
 function getAllAnimals() {
   fetch('http://localhost:3000/animalData')
   .then(res => res.json())
-  .then(data => console.log(data))
+  .then(animalData => animalData.forEach(animal => renderOneAnimal(animal)))
+  // console.log('before fetch returns')
+}
+
+function adoptAnimal(animalObj){
+
+  fetch('http://localhost:3000/animalData',{
+    method:'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body:JSON.stringify(animalObj)
+  })
+  .then(res => res.json())
+  .then(animal => console.log(animal))
+
 }
 
 //Initial render
@@ -35,5 +70,6 @@ function getAllAnimals() {
  function initialize() {
     // animalData.forEach(animal => renderOneAnimal(animal))
     getAllAnimals()
+    // console.log('after get all animals')
  }
  initialize()

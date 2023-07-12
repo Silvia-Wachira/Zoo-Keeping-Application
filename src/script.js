@@ -37,7 +37,17 @@ function renderOneAnimal(animal){
   </div>
   `
 
-  card.querySelector('#donate').addEventListener('click', () => console.log('click'))
+  card.querySelector('#donate').addEventListener('click', () =>{
+    animal.donations += 10
+    card.querySelector('span').textContent = animal.donations
+    updateDonation(animal)
+  })
+
+  card.querySelector('#set_free').addEventListener('click', () =>{
+    animal.set_free = 0
+    card.remove()
+    deleteAnimal(animal.id)
+  })
   //Add animal card to DOM
   document.querySelector('#animal-list').appendChild(card)
 }
@@ -63,6 +73,29 @@ function adoptAnimal(animalObj){
   .then(res => res.json())
   .then(animal => console.log(animal))
 
+}
+
+function updateDonation(animalObj){
+  fetch(`http://localhost:3000/animalData/${animalObj.id}`,{
+    method:'PATCH',
+    headers:{
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(animalObj)
+  })
+  .then(res => res.json())
+  .then(animal => console.log(animalObj))
+}
+
+function deleteAnimal(id){
+  fetch(`http://localhost:3000/animalData/${id}`,{
+    method:'DELETE',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(res => res.json())
+  .then(animal => console.log(animal))
 }
 
 //Initial render

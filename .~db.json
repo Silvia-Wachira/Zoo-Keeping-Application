@@ -34,6 +34,13 @@
       "description": "The largest land mammal",
       "donations": 0,
       "id": 16
+    },
+    {
+      "name": "Elephant",
+      "imageUrl": "https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "The largest land mammal",
+      "donations": 0,
+      "id": 17
     }
   ]
 }

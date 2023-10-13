@@ -105,5 +105,6 @@ function deleteAnimal(id){
     getAllAnimals()
     // console.log('after get all animals')
  }
+ 
  initialize()
  

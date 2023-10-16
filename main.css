@@ -1,7 +1,12 @@
+.navbar {
+  display: flex;
+  font-size: 20px;
+  
+}
 #menu {
     background-color: hsl(120, 67%, 42%);
     color: white;
-    height: 70px;
+    height: 100px;
 }
 .card-1 {
     background: rgb(254, 252, 252);

@@ -69,3 +69,6 @@
   border: none;
   height: 30px;
 }
+footer {
+  background-color: hsl(120, 67%, 42%);
+}
